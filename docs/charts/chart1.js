@@ -1,17 +1,22 @@
-Highcharts.chart('chart1', {
-    chart: {
-        type: 'column'
-    },
-    data: {
-        // enablePolling: true,
-        csvURL: 'file:///Users/cbsteven/Documents/ProgrammingProjects/TrumpsEconomy/docs/data/chart1.csv'
-    },
-    title: {
-        text: 'Fruit Chart'
-    },
-    yAxis: {
+document.addEventListener('DOMContentLoaded', function () {
+    Highcharts.chart('chart1', {
+        chart: {
+            type: 'column'
+        },
+        data: {
+            // enablePolling: true,
+            csvURL: 'https://www.highcharts.com/studies/data.csv'
+        },
         title: {
-            text: 'Units'
+            text: 'Fruit Chart'
+        },
+        yAxis: {
+            title: {
+                text: 'Units'
+            }
         }
-    }
+    });
 });
+
+
+// https://www.highcharts.com/studies/data.csv
