@@ -20,3 +20,4 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 // https://www.highcharts.com/studies/data.csv
+// https://raw.githubusercontent.com/Nelluk/EconGraphs/master/docs/data/chart1.csv
