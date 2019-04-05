@@ -11,8 +11,8 @@ if not setup.alphavantage_key:
     exit(1)
 
 payload = {'function': 'TIME_SERIES_DAILY',
-            'symbol': symb_sp500,
-            'outputsize': 'compact',  # 'full' for all history or  'compact' for last 100 data points
+            'symbol': symb_dow,
+            'outputsize': 'full',  # 'full' for all history or  'compact' for last 100 data points
             'apikey': setup.alphavantage_key}
 
 base_url = 'https://www.alphavantage.co/query'
@@ -32,4 +32,4 @@ for key, value in response_data['Time Series (Daily)'].items():
     if int(key[:4]) < 2007:
         continue  # skip close dates prior to 2007
 
-    SP500.replace(date=key, close=value['4. close']).execute()
+    DowJones.replace(date=key, close=value['4. close']).execute()
