@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function () {
         },
         data: {
             // enablePolling: true,
-            csvURL: 'https://raw.githubusercontent.com/Nelluk/EconGraphs/master/docs/data/chart1.csv'
+            csvURL: 'https://raw.githubusercontent.com/Nelluk/EconGraphs/master/data/chart1.csv'
         },
         title: {
             text: 'Fruit Chart'
@@ -20,4 +20,4 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 // https://www.highcharts.com/studies/data.csv
-// https://raw.githubusercontent.com/Nelluk/EconGraphs/master/docs/data/chart1.csv
+// https://raw.githubusercontent.com/Nelluk/EconGraphs/master/data/chart1.csv
