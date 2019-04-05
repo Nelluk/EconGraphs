@@ -1,7 +1,12 @@
 document.addEventListener('DOMContentLoaded', function () {
-    Highcharts.chart('chart1', {
+    Highcharts.chart('stock_market_trend', {
         chart: {
             type: 'line'
+        },
+        plotOptions: {
+            series: {
+                color: '#0c0909'
+            }
         },
         data: {
             // enablePolling: true,
@@ -14,7 +19,21 @@ document.addEventListener('DOMContentLoaded', function () {
             title: {
                 text: 'Closing Price'
             }
-        }
+        },
+        xAxis: {
+            plotBands: [{
+                color: '#d7dcef',
+                from: Date.UTC(2008, 1, 20),
+                to: Date.UTC(2017, 1, 19)
+            },
+            {
+                color: '#edc4c4',
+                from: Date.UTC(2017, 1, 20),
+                to: Date.UTC(2024, 2, 4)
+            }],
+            tickInterval: 24 * 3600 * 1000, // one day
+            type: 'datetime'
+        },
     });
 });
 
