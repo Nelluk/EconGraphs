@@ -1,0 +1,24 @@
+# Python bytecode:
+*.py[co]
+
+# Packaging files:
+*.egg*
+
+# Editor temp files:
+*.swp
+*~
+
+# SQLite3 database files:
+*.db*
+*.sql*
+
+config.ini
+
+*.sublime*
+pyvenv.cfg
+pip-selfcheck.json
+*.log*
+*.json
+*test.py
+.python-version
+TODO.txt
