@@ -1,5 +1,4 @@
-document.addEventListener('DOMContentLoaded', function () {
-    Highcharts.chart('stock_market_trend', {
+var stock_chart = new Highcharts.chart('stock_market_trend', {
         chart: {
             type: 'line',
             zoomType: 'x'
@@ -11,7 +10,16 @@ document.addEventListener('DOMContentLoaded', function () {
         },
         data: {
             // enablePolling: true,
-            csvURL: 'https://raw.githubusercontent.com/Nelluk/EconGraphs/master/data/stock_market_trend.csv'
+            csvURL: 'https://raw.githubusercontent.com/Nelluk/EconGraphs/master/data/stock_market_trend.csv',
+            // seriesMapping: [{
+            //     x:0,
+            //     y:2,
+            //     label: 3
+            // },{
+            //     x:0,
+            //     y:4,
+            //     label: 3
+            // }]
         },
         title: {
             text: 'Mark Indices Since 2007'
@@ -39,9 +47,21 @@ document.addEventListener('DOMContentLoaded', function () {
             }],
             type: 'datetime'
         },
+        series: [{
+            visible: false
+        },
+        {
+            visible: false
+        },
+        {
+            visible: false
+        },
+        {
+            visible: false
+        }]
     });
-});
 
+console.log('test')
 
 // https://www.highcharts.com/studies/data.csv
 // https://raw.githubusercontent.com/Nelluk/EconGraphs/master/data/chart1.csv
