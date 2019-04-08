@@ -1,11 +1,12 @@
-var stock_chart = new Highcharts.chart('stock_market_trend', {
+var stock_chart = new Highcharts.StockChart('stock_market_trend', {
         chart: {
             type: 'line',
             zoomType: 'x'
         },
         plotOptions: {
             series: {
-                color: '#0c0909'
+                color: '#0c0909',
+                compare: 'percent'
             }
         },
         data: {
@@ -47,18 +48,18 @@ var stock_chart = new Highcharts.chart('stock_market_trend', {
             }],
             type: 'datetime'
         },
-        series: [{
-            visible: false
-        },
-        {
-            visible: false
-        },
-        {
-            visible: false
-        },
-        {
-            visible: false
-        }]
+        // series: [{
+        //     visible: false
+        // },
+        // {
+        //     visible: false
+        // },
+        // {
+        //     visible: false
+        // },
+        // {
+        //     visible: false
+        // }]
     });
 
 console.log('test')
