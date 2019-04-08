@@ -15,4 +15,4 @@ with open('../data/sp500_trend.csv', mode='w') as stock_market_trend_file:
     for price_sp500, price_dow in zip(price_history_sp500, price_history_dow):
         # csv_writer.writerow([price_sp500[1], price_sp500[2], price_sp500[2] / price_baseline_sp500, price_dow[2], price_dow[2] / price_baseline_dow])
         # csv_writer.writerow([price_sp500[1], price_sp500[2], price_dow[2]])
-        csv_writer.writerow([price_sp500[1], f'${price_sp500[2]}'])
+        csv_writer.writerow([price_sp500[1], price_sp500[2]])

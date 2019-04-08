@@ -11,16 +11,8 @@ var stock_chart = new Highcharts.StockChart('stock_market_trend', {
         },
         data: {
             // enablePolling: true,
-            csvURL: 'https://raw.githubusercontent.com/Nelluk/EconGraphs/master/data/stock_market_trend.csv',
-            // seriesMapping: [{
-            //     x:0,
-            //     y:2,
-            //     label: 3
-            // },{
-            //     x:0,
-            //     y:4,
-            //     label: 3
-            // }]
+            // csvURL: 'https://raw.githubusercontent.com/Nelluk/EconGraphs/master/data/stock_market_trend.csv',
+            csvURL: 'https://raw.githubusercontent.com/Nelluk/EconGraphs/master/data/sp500_trend.csv',
         },
         title: {
             text: 'Mark Indices Since 2007'
