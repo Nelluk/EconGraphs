@@ -4,10 +4,10 @@ Intended to show graphs of a bunch of economic indicators with shading to repres
 
 Only got to the stock market indicator before stalling out.
 
-`scripts/stock_market_pricing.py` used AlphaVantage API to grab historical data and popular a SQLite database. API no longer works for stock indices
+`scripts/stock_market_pricing.py` used AlphaVantage API to grab historical data and populate a SQLite database. API no longer works for stock indices
 and would need to be replaced by something else if this is used again (maybe yfinance)
 
-`scripts/stock_market_roys.py` just creates a CSV file from the database.
+`scripts/stock_market_rows.py` just creates a CSV file from the database.
 
 `charts/stock_market_trend.js` created the chart with Highcharts.js
 
