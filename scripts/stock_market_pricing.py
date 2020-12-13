@@ -4,7 +4,7 @@ import peewee
 from models import SP500, DowJones
 
 symb_sp500 = '^GSPC'
-symb_dow = '.DJI'
+symb_dow = 'DIA'  # direct index fund reference like '.DJI/^GSPC' stopped working due to API change sometime in 2020
 
 if not setup.alphavantage_key:
     print('Could not load alphavantage_key from config.ini')
@@ -26,6 +26,8 @@ try:
 except ValueError:
     print(f'Error parsing response. Status code {r.status_code} from request url {r.url}')
     exit(1)
+
+print(response_data)
 
 for key, value in response_data['Time Series (Daily)'].items():
     # print(key, value['4. close'])
